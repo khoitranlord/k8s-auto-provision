@@ -1,0 +1,10 @@
+[master]
+192.168.163.131 ansible_user=master-1 ansible_ssh_pass=qwerasdf
+
+[workers]
+192.168.163.129 ansible_user=worker-1  ansible_ssh_pass=qwerasdf
+192.168.163.130 ansible_user=worker-2  ansible_ssh_pass=qwerasdf
+
+[all:vars]
+master_ip=192.168.163.131
+master-user-profile=master-1 
