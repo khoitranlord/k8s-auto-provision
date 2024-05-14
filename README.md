@@ -4,10 +4,10 @@
 ## Structure
 ![image](https://github.com/khoitranlord/k8s-auto-provision/assets/79269059/72845a79-a6f9-4211-95ed-af42638f3204)
 
-In this case, proxy VMs is reduced, we will run kubectl on ansible-control-node or k8s master-node:
+In this case, proxy VM is reduced, we will run kubectl on ansible-control-node or k8s master-node:
 Set up: 1 ansible control node,  1 k8s master node, 2 worker nodes.
 
-Note: If VM run on non-root user, add that current user to sudoers group with this commnad:
+Note: If VMs run on non-root user, add that current user to no-passworkd-requiered sudoers group with this commnad:
 ```
 echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
 ```
